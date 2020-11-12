@@ -1,0 +1,6 @@
+An array is an object that allows the user to store variables in a indexable way. The array name is an alies for the memory address where the array is being store.
+Then the first object of the arrary is the name memory address and it stops at the name memory address + the type size. In my current PC an int is 4bytes, a char is 1 byte a float is 4 bytes and a double is 8 bytes, however, this will vary in different architectures.
+
+It is important to understand that an array index starts at 0 and correlates wit the name memory location, an array index can be though as the memory location where the first element of the array is stored. The second element of an array is stored at index 1 which correlates at the memory location array name + type size. It is word noting that the begining of array[1] is the same memory location that the end of array[0]. This is important because it dictates that all arrays must have a memory continuity from begining to end.
+
+In C99 and C11, as it is shown in the given example, the user can define an array, compile the program and at run time the user can give the length of the array. This technique is call variable length array.
