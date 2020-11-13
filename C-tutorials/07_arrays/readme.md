@@ -9,7 +9,7 @@ Memory allocation array is a technique use to increase the length of an array du
 
 To use memory allocation the c language uses malloc or calloc functions. In addtion, there are functions like realloc, which allows the user to re allocate memory into. It is worth noting that the allocated memory needs to be freed once the user does not need it any more.
 
-To pass an array to a function we need to pass the array by reference. It is worth noting that malloc returns a pointer to void. Once the array is statically define, already in memory, we can increase the memory by taking the address of the array an passed it into malloc.
+To pass an array to a function we need to pass the array by reference. It is worth noting that malloc returns a pointer to void. Once the array is statically define, already in memory, we can increase the memory by taking the address of the array an passed it into malloc. It is worth noting that the pointer to the memory that is being allocated seats in the stack and the memory that is allocated seats in the heap.
 
 To pass an statically define array.
 
