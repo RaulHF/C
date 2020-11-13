@@ -8,3 +8,5 @@ In C99 and C11, as it is shown in the given example, the user can define an arra
 Memory allocation array is a technique use to increase the length of an array during run time. It is worth noting that an array needs to have a contigous memory, so that the indexing mechanism works.
 
 To use memory allocation the c language uses malloc or calloc functions. In addtion, there are functions like realloc, which allows the user to re allocate memory into. It is worth noting that the allocated memory needs to be freed once the user does not need it any more.
+
+To pass an array to a function we need to pass the array by reference.
