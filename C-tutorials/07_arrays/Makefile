@@ -1,1 +1,1 @@
-default: arrays
+default: array_string
