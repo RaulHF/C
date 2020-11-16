@@ -1,0 +1,1 @@
+default: command_line_arguments
