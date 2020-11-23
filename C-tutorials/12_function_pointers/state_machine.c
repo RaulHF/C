@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<time.h>
-
+#include<unistd.h>
 /*This structure represent all the sensor readings*/
 typedef struct data{
 	double p_1;
@@ -33,13 +33,19 @@ void change_state(state , data *, action *);
 
 int main(){
 
+	clock_t start_t, end_t, deadline_t;
+	start_t = clock();
+
 	data data = {0, 0, 0};
 	action action = {0, 0, 0};
 
 	change_state(state_1, &data, &action);
 	change_state(state_2, &data, &action);
 	change_state(state_3, &data, &action);
-
+	for(int indx = 0; indx < 100000000; indx++){
+	}
+	end_t = clock();	
+	printf("%lf\n" , (double)(end_t - start_t)/CLOCKS_PER_SEC);
 	return 0;
 }
 
