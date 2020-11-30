@@ -18,20 +18,24 @@ int main(){
 node *first = NULL;
 node *second = NULL;
 node *third = NULL;
+node *fourth = NULL;
 
 /*define the structures*/
 first = create_node(1);
 second = create_node(2);
 third = create_node(3);
+fourth = create_node(4);
 
 /*Link the next object*/
 first -> next =  second;
 second -> next = third;
+third -> next = fourth;
 
 /*Print nodes*/
 print_node(first);
 print_node(second);
 print_node(third);
+print_node(fourth);
 
 free(first);
 free(second);
